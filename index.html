@@ -3,22 +3,16 @@
 <head>
   <meta http-equiv="refresh" content="60">
   <style>
-    body { margin:0; background:black; overflow:hidden; }
+    html, body { margin:0; height:100%; background:black; overflow:hidden; }
     iframe { border:0; width:100vw; height:100vh; }
   </style>
 </head>
 <body>
-
-<iframe id="slides"></iframe>
-
-<script>
-function loadSlides() {
-  var t = new Date().getTime();
-  document.getElementById('slides').src =
-    "https://docs.google.com/presentation/d/e/2PACX-1vQ5r_M5pjvyXOr5feHAbUSGiJPpu-9avhKltWM6j2KxTa46UsI_YFQ8EVinO8oHFtcxMHVb4oTbqXZm/pub?start=true&loop=true&delayms=60000&v=" + t;
-}
-loadSlides();
-</script>
-
+  <iframe
+    src="https://docs.google.com/presentation/d/e/2PACX-1vQ5r_M5pjvyXOr5feHAbUSGiJPpu-9avhKltWM6j2KxTa46UsI_YFQ8EVinO8oHFtcxMHVb4oTbqXZm/embed?start=true&loop=true&delayms=60000"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true">
+  </iframe>
 </body>
 </html>
